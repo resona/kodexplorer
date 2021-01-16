@@ -452,17 +452,18 @@ class explorer extends Controller{
 		$rootIsparent = count($root)>0?true:false;
 		$publicIsparent = count($public)>0?true:false;
 		$treeData = array(
-			'fav'=>array(
-				'name'      => LNG('fav'),
-				'ext' 		=> "tree-fav",
-				'menuType'  => "menu-tree-fav-root",
-				'children'  => $fav,
-
-				'path' 		=> KOD_USER_FAV,
-				'type'      => 'folder',
-				'open'      => true,
-				'isParent'  => count($fav)>0?true:false
-			),
+//			删除左侧的路径树下的已有的收藏夹和public路径
+//			'fav'=>array(
+//				'name'      => LNG('fav'),
+//				'ext' 		=> "tree-fav",
+//				'menuType'  => "menu-tree-fav-root",
+//				'children'  => $fav,
+//
+//				'path' 		=> KOD_USER_FAV,
+//				'type'      => 'folder',
+//				'open'      => true,
+//				'isParent'  => count($fav)>0?true:false
+//			),
 			'myHome'=>array(
 				'name'		=> LNG('root_path'),
 				'menuType'  => "menu-tree-root",
@@ -475,17 +476,17 @@ class explorer extends Controller{
 				'isParent'  => $rootIsparent
 			),
 
-			'public'=>array(
-				'name'		=> $groupRootName,
-				'menuType'  => "menu-tree-group-root menu-tree-group-public",
-				'ext' 		=> "group-public",
-				'children'  => $public,
-
-				'path' 		=> $publicPath,
-				'type'      => 'folder',
-				'open'      => true,
-				'isParent'  => $publicIsparent
-			),
+//			'public'=>array(
+//				'name'		=> $groupRootName,
+//				'menuType'  => "menu-tree-group-root menu-tree-group-public",
+//				'ext' 		=> "group-public",
+//				'children'  => $public,
+//
+//				'path' 		=> $publicPath,
+//				'type'      => 'folder',
+//				'open'      => true,
+//				'isParent'  => $publicIsparent
+//			),
 			'myGroup'=>array(
 				'name'		=> LNG('my_kod_group'),//TODO
 				'menuType'  => "menu-tree-group-root",

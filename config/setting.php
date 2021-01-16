@@ -76,7 +76,8 @@ $config['settingSystemDefault'] = array(
 );
 //初始化默认菜单配置
 $config['settingSystemDefault']['menu'] = array(
-	array('name'=>'desktop','type'=>'system','url'=>'index.php?desktop','target'=>'_self','use'=>'1'),
+	//不显示桌面按钮
+	//array('name'=>'desktop','type'=>'system','url'=>'index.php?desktop','target'=>'_self','use'=>'1'),
 	array('name'=>'explorer','type'=>'system','url'=>'index.php?explorer','target'=>'_self','use'=>'1'),
 	array('name'=>'editor','type'=>'system','url'=>'index.php?editor','target'=>'_self','use'=>'1')
 );
